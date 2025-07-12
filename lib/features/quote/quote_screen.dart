@@ -12,7 +12,12 @@ class QuotesPage extends StatelessWidget {
     final cubit = AppCubit.get(context);
 
     return Scaffold(
-      backgroundColor: const Color(0xFFFFF9E6), // Light yellow background
+      backgroundColor: const Color.fromARGB(
+        255,
+        230,
+        234,
+        255,
+      ), // Light yellow background
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -56,7 +61,7 @@ class QuotesPage extends StatelessWidget {
                     icon: const Icon(Icons.format_quote),
                     label: const Text("New Quote"),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepOrangeAccent,
+                      backgroundColor: const Color.fromARGB(255, 110, 163, 254),
                       foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(
                         horizontal: 24,

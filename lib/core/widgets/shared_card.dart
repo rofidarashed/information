@@ -9,7 +9,7 @@ class AppCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 100),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: isError ? Colors.red.shade100 : Colors.white,
